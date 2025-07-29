@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IManage</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #0a1a2e;
+            color: #fff;
+            line-height: 1.6;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: #0a1a2e;
+        }
+        .navbar img {
+            height: 40px;
+        }
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 16px;
+        }
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .hero img {
+            width: 100%;
+            max-width: 600px;
+            margin-bottom: 20px;
+        }
+        .hero h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 1.2em;
+            color: #ccc;
+        }
+        .hero .btn {
+            background-color: #1e90ff;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            margin-top: 20px;
+            display: inline-block;
+            border-radius: 15px;
+        }
+        .section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .section h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .section p {
+            color: #ccc;
+            margin-bottom: 20px;
+        }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .feature-card {
+            background-color: #1a2a3e;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .feature-card img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .how-it-works .card {
+            background-color: #1e90ff;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 10px 0;
+        }
+        .why-choose-us .card {
+            background-color: #1a2a3e;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 10px 0;
+        }
+        .why-choose-us .card h3 {
+            margin-top: 10px;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #0a1a2e;
+            border-top: 1px solid #1a2a3e;
+        }
+        .footer img {
+            width: 500px;
+            margin: 0 10px;
+        }
+         .btn {
+                background-color: #187bf5e5;
+                padding: 10px 20px;
+                border-radius: 10px;
+                text-decoration: none;
+                color: #fff;
+        }
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                padding: 20px;
+            }
+            .nav-links {
+                margin-top: 10px;
+            }
+            .nav-links a {
+                margin: 0 10px;
+            }
+            .hero h1 {
+                font-size: 1.8em;
+            }
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <img src="https://via.placeholder.com/150x50?text=IManage+Logo" alt="IManage Logo">
+        <div class="nav-links">
+            <a href="#features">Features</a>
+            <a href="#how-it-works">How It Works</a>
+            <a href="#why-choose-us">Why IManage</a>
+        </div>
+    </div>
+    <div class="hero">
+        <img src="images/Subtract.png" alt="Hero Image">
+        <h1>SMART BUSINESS STARTS WITH IMANAGE</h1>
+        <p>Streamline your operations, boost productivity, and grow your business with ease.</p>
+        <a href="#" class="btn">Get Started</a> <a href="#" class="btn">Start Free Trial</a>
+    </div>
+    <div class="section" id="features">
+        <h2>Key Features</h2>
+        <p>Powerful Tools & Simple Interface</p>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <img src="images/card.png" alt="Dashboard Analytics">
+                <h3>Dashboard Analytics</h3>
+                <p>Visual insights on sales, tasks & reminders.</p>
+            </div>
+            <div class="feature-card">
+                <img src="https://via.placeholder.com/250x150?text=Smart+CRM" alt="Smart CRM">
+                <h3>Smart CRM</h3>
+                <p>Know your customers, track conversations, and connect instantly.</p>
+            </div>
+            <div class="feature-card">
+                <img src="https://via.placeholder.com/250x150?text=Order+Inventory+Control" alt="Order Inventory Control">
+                <h3>Order & Inventory Control</h3>
+                <p>Manage stock, track orders, monitor deliveries.</p>
+            </div>
+            <div class="feature-card">
+                <img src="https://via.placeholder.com/250x150?text=Subscription+Sales+Management" alt="Subscription Sales Management">
+                <h3>Subscription & Sales Management</h3>
+                <p>Automate payments and track transactions.</p>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="how-it-works">
+        <h2>How it Works</h2>
+        <p>How IManage Works For You</p>
+        <div class="how-it-works">
+            <div class="card">
+                <img src="https://via.placeholder.com/50x50?text=Sign+Up" alt="Sign Up">
+                <h3>Sign Up</h3>
+                <p>Create an account in seconds.</p>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/50x50?text=Customize" alt="Customize">
+                <h3>Customize</h3>
+                <p>Add your brand, choose your tools.</p>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/50x50?text=Manage" alt="Manage">
+                <h3>Manage</h3>
+                <p>Track your business in real-time.</p>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/50x50?text=Grow" alt="Grow">
+                <h3>Grow</h3>
+                <p>Use insights to make better decisions.</p>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="why-choose-us">
+        <h2>Why IManage?</h2>
+        <p>21st Century Business Management</p>
+        <div class="why-choose-us">
+            <div class="card">
+                <h3>All-in-One Platform – No more switching tools.</h3>
+                <p>Running a business is hard enough without multiple tools and apps to juggle. IManage eliminates the need for separate software by giving you everything you need in one place – from scheduling posts to integrating with social media, automating tasks, and tracking customer relationships, it’s all integrated into a single platform.</p>
+            </div>
+            <div class="card">
+                <h3>Mobile Friendly – Manage on the go.</h3>
+                <p>Whether you’re in the office or on the move, IManage gives you full control of your operations anytime, anywhere – from your phone, tablet, or computer. Stay connected with your team and customers no matter where your business takes you.</p>
+            </div>
+            <div class="card">
+                <h3>Built for Teams & Solo Founders – Scale with ease.</h3>
+                <p>Whether you’re a one-person brand or managing a growing team, IManage simplifies daily operations while teams benefit from role-based access, task assignments, and workflow automation – no need to start over as you scale.</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <img src="images/call to action.png" alt="">
+        <p>Ready to Simplify Your Business?</p>
+        <br>
+        <a href="#" class="btn">Get Started</a>
+        <br> <br>
+        <div>
+            <img src="https://via.placeholder.com/20x20?text=FB" alt="Facebook">
+            <img src="https://via.placeholder.com/20x20?text=Twitter" alt="Twitter">
+        </div>
+        <p>© 2023 IManage | All rights reserved.</p>
+    </div>
+    <script>
+        // Simple JavaScript for responsiveness and interactivity
+        window.addEventListener('resize', () => {
+            const cards = document.querySelectorAll('.feature-card, .card');
+            cards.forEach(card => {
+                card.style.height = 'auto';
+            });
+        });
+    </script>
+</body>
+</html>
