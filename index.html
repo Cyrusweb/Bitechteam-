@@ -2,179 +2,56 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>IManage</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
-        body {
-            background-color: #0a1a2e;
-            color: #fff;
-            line-height: 1.6;
-        }
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 50px;
-            background-color: #0a1a2e;
-        }
-        .navbar img {
-            height: 40px;
-        }
-        .nav-links a {
-            color: #fff;
-            text-decoration: none;
-            margin-left: 20px;
-            font-size: 16px;
-        }
-        .hero {
-            text-align: center;
-            padding: 50px 20px;
-        }
-        .hero img {
-            width: 100%;
-            max-width: 600px;
-            margin-bottom: 20px;
-        }
-        .hero h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-        }
-        .hero p {
-            font-size: 1.2em;
-            color: #ccc;
-        }
-        .hero .btn {
-            background-color: #1e90ff;
-            color: #fff;
-            padding: 10px 20px;
-            text-decoration: none;
-            margin-top: 20px;
-            display: inline-block;
-            border-radius: 15px;
-        }
-        .section {
-            padding: 50px 20px;
-            text-align: center;
-        }
-        .section h2 {
-            font-size: 2em;
-            margin-bottom: 20px;
-        }
-        .section p {
-            color: #ccc;
-            margin-bottom: 20px;
-        }
-        .feature-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        .feature-card {
-            background-color: #1a2a3e;
-            padding: 20px;
-            border-radius: 10px;
-        }
-        .feature-card img {
-            width: 100%;
-            height: auto;
-            margin-bottom: 10px;
-        }
-        .how-it-works .card {
-            background-color: #1e90ff;
-            padding: 20px;
-            border-radius: 10px;
-            margin: 10px 0;
-        }
-        .why-choose-us .card {
-            background-color: #1a2a3e;
-            padding: 20px;
-            border-radius: 10px;
-            margin: 10px 0;
-        }
-        .why-choose-us .card h3 {
-            margin-top: 10px;
-        }
-        .footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #0a1a2e;
-            border-top: 1px solid #1a2a3e;
-        }
-        .footer img {
-            width: 500px;
-            margin: 0 10px;
-        }
-         .btn {
-                background-color: #187bf5e5;
-                padding: 10px 20px;
-                border-radius: 10px;
-                text-decoration: none;
-                color: #fff;
-        }
-        @media (max-width: 768px) {
-            .navbar {
-                flex-direction: column;
-                padding: 20px;
-            }
-            .nav-links {
-                margin-top: 10px;
-            }
-            .nav-links a {
-                margin: 0 10px;
-            }
-            .hero h1 {
-                font-size: 1.8em;
-            }
-            .feature-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="navbar">
-        <img src="https://via.placeholder.com/150x50?text=IManage+Logo" alt="IManage Logo">
-        <div class="nav-links">
-            <a href="#features">Features</a>
-            <a href="#how-it-works">How It Works</a>
-            <a href="#why-choose-us">Why IManage</a>
+    <header>
+        <div class="menu-toggle">☰</div>
+        <img src="images/log1o.png" alt="iManage Logo" class="logo">
+    </header>
+    </br></br>
+    <nav class="sidebar">
+        <ul>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#how-it-works">How it Works</a></li>
+            <li><a href="#resources">Resources</a></li>
+            <li><a href="#contact" class="contact">Contact Us</a></li>
+            <li><button class="sign-in">Sign In</button></li>
+        </ul>
+    </nav>
+    <section class="hero">
+        <img src="images/subtract.png" alt="Building Image" class="hero-image">
+        <div class="hero-content">
+            <h2>SMART BUSINESS STARTS WITH iMANAGE</h2>
+            <p>Manage sales, inventory, orders, customers, tasks, and even social media—all from one beautifully designed, mobile-friendly dashboard.</p>
+            <button class="btn primary">Get Started</button>
+            <button class="btn secondary">Start Free Trial</button>
         </div>
-    </div>
-    <div class="hero">
-        <img src="images/Subtract.png" alt="Hero Image">
-        <h1>SMART BUSINESS STARTS WITH IMANAGE</h1>
-        <p>Streamline your operations, boost productivity, and grow your business with ease.</p>
-        <a href="#" class="btn">Get Started</a> <a href="#" class="btn">Start Free Trial</a>
-    </div>
+    </section>
     <div class="section" id="features">
         <h2>Key Features</h2>
-        <p>Powerful Tools & Simple Interface</p>
+        <p class="subtitle">Powerful Tools & Simple Interface</p>
         <div class="feature-grid">
             <div class="feature-card">
-                <img src="images/card.png" alt="Dashboard Analytics">
+                <img src="images/img2.png" alt="Dashboard Analytics">
                 <h3>Dashboard Analytics</h3>
                 <p>Visual insights on sales, tasks & reminders.</p>
             </div>
             <div class="feature-card">
-                <img src="https://via.placeholder.com/250x150?text=Smart+CRM" alt="Smart CRM">
+                <img src="images/im3.png" alt="Smart CRM">
                 <h3>Smart CRM</h3>
                 <p>Know your customers, track conversations, and connect instantly.</p>
             </div>
             <div class="feature-card">
-                <img src="https://via.placeholder.com/250x150?text=Order+Inventory+Control" alt="Order Inventory Control">
+                <img src="images/img4.png" alt="Order Inventory Control">
                 <h3>Order & Inventory Control</h3>
                 <p>Manage stock, track orders, monitor deliveries.</p>
             </div>
             <div class="feature-card">
-                <img src="https://via.placeholder.com/250x150?text=Subscription+Sales+Management" alt="Subscription Sales Management">
+                <img src="images/img.png" alt="Subscription Sales Management">
                 <h3>Subscription & Sales Management</h3>
                 <p>Automate payments and track transactions.</p>
             </div>
@@ -182,25 +59,25 @@
     </div>
     <div class="section" id="how-it-works">
         <h2>How it Works</h2>
-        <p>How IManage Works For You</p>
+        <p class="subtitle">How IManage Works For You</p>
         <div class="how-it-works">
             <div class="card">
-                <img src="https://via.placeholder.com/50x50?text=Sign+Up" alt="Sign Up">
+                <img src="images/img6.png" alt="Sign Up">
                 <h3>Sign Up</h3>
                 <p>Create an account in seconds.</p>
             </div>
             <div class="card">
-                <img src="https://via.placeholder.com/50x50?text=Customize" alt="Customize">
+                <img src="images/img7.png" alt="Customize">
                 <h3>Customize</h3>
                 <p>Add your brand, choose your tools.</p>
             </div>
             <div class="card">
-                <img src="https://via.placeholder.com/50x50?text=Manage" alt="Manage">
+                <img src="images/img8.png" alt="Manage">
                 <h3>Manage</h3>
                 <p>Track your business in real-time.</p>
             </div>
             <div class="card">
-                <img src="https://via.placeholder.com/50x50?text=Grow" alt="Grow">
+                <img src="images/img9.png" alt="Grow">
                 <h3>Grow</h3>
                 <p>Use insights to make better decisions.</p>
             </div>
@@ -208,7 +85,7 @@
     </div>
     <div class="section" id="why-choose-us">
         <h2>Why IManage?</h2>
-        <p>21st Century Business Management</p>
+        <p class="subtitle">21st Century Business Management</p>
         <div class="why-choose-us">
             <div class="card">
                 <h3>All-in-One Platform – No more switching tools.</h3>
@@ -225,19 +102,24 @@
         </div>
     </div>
     <div class="footer">
-        <img src="images/call to action.png" alt="">
+        <img src="images/call to action.png" alt="Call to Action">
         <p>Ready to Simplify Your Business?</p>
         <br>
         <a href="#" class="btn">Get Started</a>
-        <br> <br>
-        <div>
-            <img src="https://via.placeholder.com/20x20?text=FB" alt="Facebook">
-            <img src="https://via.placeholder.com/20x20?text=Twitter" alt="Twitter">
+        <br><br>
+        <div class="social-links">
+           <a href=""><img src="images/facebook.png" alt="Facebook"></a>
+          <a href=""><img src="images/instagram.png" alt="instagram"></a>
         </div>
         <p>© 2023 IManage | All rights reserved.</p>
     </div>
+
     <script>
-        // Simple JavaScript for responsiveness and interactivity
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.sidebar').classList.toggle('open');
+            this.classList.toggle('open');
+        });
+
         window.addEventListener('resize', () => {
             const cards = document.querySelectorAll('.feature-card, .card');
             cards.forEach(card => {
